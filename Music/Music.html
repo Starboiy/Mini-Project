@@ -14,6 +14,18 @@
             padding: 0;
         }
 
+        body {
+    padding-top: 45px; /* Adjust the padding-top value based on your navbar's height */
+  } 
+
+        .fixed-top-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Adjust the z-index value as needed */
+      }
+
         .custom-background {
             background-image: url('/Music/BACKGROUND-1.jpg');
             background-size: cover;
@@ -58,12 +70,14 @@
     .song-name {
         margin: 0;
         font-size: 20px; /* Adjust the desired font size for the song name */
+
+        
     }
     </style>
 
 </head>
 <body class="custom-background">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top-navbar" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html">HealthHorizon</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -89,7 +103,7 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Articles</a></li>
+                  <li><a class="dropdown-item" href="/Blogs/Blogs.html">Blogs</a></li>
                 </ul>
               <li class="nav-item">
                 <a class="nav-link" href="/CU/contact.html">Contact Us</a>
@@ -99,6 +113,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/Login/login.html">Log-in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Join/join.html">Join Us</a>
               </li>
               </li>
             </ul>
