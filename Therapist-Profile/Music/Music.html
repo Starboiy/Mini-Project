@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Playlist</title>
+    <!-- Add Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+    padding-top: 45px; /* Adjust the padding-top value based on your navbar's height */
+  } 
+
+        .fixed-top-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Adjust the z-index value as needed */
+      }
+
+        .custom-background {
+            background-image: url('/Music/BACKGROUND-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(245, 245, 245, 0.7); /* Adjust the alpha (last) value to control opacity */
+            position: relative;
+            z-index: 0; /* Ensure the background image is behind the content */
+        }
+
+        .song-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 1; /* Ensure the songs appear above the background */
+        }
+
+        .song-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .play-icon {
+        width: 20px; /* Adjust the desired width for the play icon image */
+    }
+
+    .play-icon-image {
+        display: block;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .audio-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content vertically */
+        margin-left: 35px; /* Adjust the desired spacing between the image and audio controls *//
+    }
+    
+    .song-name {
+        margin: 0;
+        font-size: 20px; /* Adjust the desired font size for the song name */
+
+        
+    }
+    </style>
+
+</head>
+<body class="custom-background">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top-navbar" data-bs-theme="dark">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HealthHorizon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Therapist-Profile/profile-1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Therapist-Profile/appointments-1.html">My Appointments</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="/Therapist-Profile/Activities/" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Therapist-Profile/Music/Music.html">Music</a></li>
+                  <li><a class="dropdown-item" href="/Therapist-Profile/Activities/todo.html">To-Do List</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/Therapist-Profile/Blogs/Blogs.html">Blogs</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/Therapist-Profile/CU/contact.html">Contact Us</a>
+              </li>
+            
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="card-title">Meditation Playlist</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="song-list">
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 1.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">A Small Miracle</h4>
+                                        <audio controls>
+                                            <source src="A Small Miracle.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 2.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Easy Lifestyle</h4>
+                                        <audio controls>
+                                            <source src="Easy Lifestyle.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 3.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Forest Lullaby</h4>
+                                        <audio controls>
+                                            <source src="Forest Lullaby.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 4.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Goodnight</h4>
+                                        <audio controls>
+                                            <source src="Goodnight.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 5.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Night Street</h4>
+                                        <audio controls>
+                                            <source src="Night Street.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+
+                                <!-- Your first 5 audio elements here -->
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="song-list">
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 6.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Once In Paris</h4>
+                                        <audio controls>
+                                            <source src="Once In Paris.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 7.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Piano Tunes</h4>
+                                        <audio controls>
+                                            <source src="Piano Tunes.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 8.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Reflected Light</h4>
+                                        <audio controls>
+                                            <source src="Reflected Light.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 9.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">Sedative</h4>
+                                        <audio controls>
+                                            <source src="Sedative.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <li class="song-item">
+                                    <div class="play-icon">
+                                        <img class="play-icon-image" src="Song 10.jpg" alt="Play Icon">
+                                    </div>
+                                    <div class="audio-controls">
+                                        <h4 class="song-name">The Beat of Nature</h4>
+                                        <audio controls>
+                                            <source src="The Beat Of Nature.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </li>
+                                <!-- Your next 5 audio elements here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">© 2023–2024 HealthHorizon</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+
+    <!-- Add Bootstrap JS and Popper.js (for Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
