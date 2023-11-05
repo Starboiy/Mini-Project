@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jennifer Martinez - Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+         body {
+    margin: 0; 
+    background-image: url('/Appointment/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    position: relative;
+  }
+
+
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .fixed-top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #333;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: cover; /* Adjust width to make it larger */
+            height: cover; /* Maintain aspect ratio */
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .profile-details {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .profile-description {
+            margin-top: 20px;
+        }
+
+        .connect-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .reviews-section {
+            margin-top: 20px;
+        }
+
+        .review-card {
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .review-author {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .review-content {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top-navbar" data-bs-theme="dark">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HealthHorizon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/Appointment/appointment.html">Get an Appointment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/Activities/" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Music/Music.html">Music</a></li>
+                  <li><a class="dropdown-item" href="/Activities/todo.html">To-Do List</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/Blogs/Blogs.html">Blogs</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/CU/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Sign-In/SIGN_IN.html">Sign-up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Login/login.html">Log-in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Join/join.html">Join Us</a>
+              </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container profile-container">
+        <div class="profile-header">
+            <img src="therapist-3b.avif" alt="Therapist 1" class="profile-image">
+            <h1 class="profile-name">Jennifer Martinez</h1>
+            <p class="profile-details">Schizophrenia Specialist</p>
+        </div>
+        <p class="profile-details"><strong>Gender:</strong> Female</p>
+        <p class="profile-details"><strong>Communication:</strong> Online and Offline</p>
+        <p class="profile-details"><strong>Location:</strong> Madrid, Spain</p>
+        <p class="profile-details"><strong>Experience:</strong> 7 years</p>
+
+        <div class="profile-description">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated and compassionate Schizophrenia Specialist with a deep commitment to helping individuals with schizophrenia lead fulfilling and meaningful lives. With extensive training and experience in the field of mental health, my goal is to provide personalized care and support to those living with schizophrenia and their families.
+
+                I believe in a holistic and patient-centered approach to treatment, recognizing that schizophrenia affects individuals in unique ways. My practice is founded on evidence-based interventions and the latest advancements in the field of psychiatry to ensure the best possible outcomes for my clients.
+            </p>
+        </div>
+
+        <div class="connect-button">
+          <a class="btn btn-primary" href="#" onclick="redirectToLogin()">Make an Appointment</a>
+          </div>
+
+        <div class="reviews-section">
+            <h2>Reviews</h2>
+            <div class="review-card">
+                <p class="review-author">Jane Smith</p>
+                <p class="review-content">Jennifer Martinez is a fantastic therapist. She has a deep understanding of schizophrenia and provides invaluable support.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-author">Mark Johnson</p>
+                <p class="review-content">I highly recommend Jennifer Martinez. Her expertise in schizophrenia treatment is exceptional.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-author">Sarah Wilson</p>
+                <p class="review-content">Jennifer Martinez has made a significant impact on my life. Her patient-centered approach is commendable.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-author">Alex Brown</p>
+                <p class="review-content">Jennifer Martinez is a compassionate therapist who truly understands the challenges of schizophrenia.</p>
+            </div>
+            <div class="review-card">
+                <p class="review-author">Linda Davis</p>
+                <p class="review-content">I'm grateful to Jennifer Martinez for her support in managing schizophrenia. She's a dedicated professional.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">© 2023–2024 HealthHorizon</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <script>
+      function redirectToLogin() {
+          var confirmBooking = confirm("You have to log-in to make appointments. Do you want to log in now?");
+          if (confirmBooking) {
+              window.location.href = "/Login/login.html";
+          }
+      }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
