@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HealthHorizon - Your Path To Wellbeing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            background-image: url('/Appointment/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .fixed-top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #333;
+        }
+
+        .btn-danger {
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #ff4949;
+        }
+
+        #profileList .card {
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #profileList .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #profileList .card-text {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .col-md-4 img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body class="custom-background">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top-navbar" data-bs-theme="dark">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HealthHorizon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/User-Profile/profile-2.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/User-Profile/Appointment/appointment.html">Get an Appointment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/User-Profile/Activities/" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/User-Profile/Music/Music.html">Music</a></li>
+                  <li><a class="dropdown-item" href="/User-Profile/Activities/todo.html">To-Do List</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/User-Profile/Blogs/Blogs.html">Blogs</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/User-Profile/CU/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/User-Profile/Join/join.html">Join Us</a>
+              </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="search-sec">
+        <div class="container">
+            <form action="#" method="post" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                    <option>Select Issue</option>
+                                    <option>Anxiety Disorders</option>
+                                    <option>Depression</option>
+                                    <option>Bipolar Disorder</option>
+                                    <option>Post-Traumatic Stress Disorder (PTSD)</option>
+                                    <option>Schizophrenia</option>
+                                    <option>Eating Disorders</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt" id="exampleFormControlSelect2">
+                                    <option>Gender preference</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt" id="exampleFormControlSelect3">
+                                    <option>Mode of Communication</option>
+                                    <option>Online</option>
+                                    <option>Offline</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <button type="button" class="btn btn-danger wrn-btn" id="searchButton">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="container" id="profileList">
+        <!-- Profiles will be displayed here based on user preferences -->
+    </div>
+
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">© 2023–2024 HealthHorizon</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <script>
+        // Sample therapist profiles (you can replace this with actual data)
+        const therapistProfiles = [
+            {
+                name: "Daniel Anderson",
+                therapyType: "Anxiety Disorders",
+                gender: "Male",
+                communication: "Online",
+                image: "therapist-1a.jpg",
+                description: "Dr. Daniel Anderson is an experienced counselor specializing in anxiety management. He offers online sessions for your convenience."
+            },
+
+            {
+                name: "Sarah Mitchell",
+                therapyType: "Depression",
+                gender: "Female",
+                communication: "Offline",
+                image: "therapist-2a.jpg",
+                description: "Sarah Mitchell is a compassionate therapist with expertise in depression counseling. She provides in-person support for her clients."
+            },
+            {
+                name: "Jennifer Martinez",
+                therapyType: "Schizophrenia",
+                gender: "Female",
+                communication: "Offline",
+                image: "therapist-3a.avif",
+                description: "Jennifer Martinez specializes in Schizophrenia treatment and offers online sessions for individuals seeking support in a convenient way."
+            },
+            {
+                name: "Matthew Taylor",
+                therapyType: "Post-Traumatic Stress Disorder (PTSD)",
+                gender: "Male",
+                communication: "Offline",
+                image: "therapist-4a.jpg",
+                description: "Matthew Taylor is an empathetic counselor focusing on depression management. He provides in-person counseling to assist clients effectively."
+            }
+            // Add more profiles here
+        ];
+
+        const profileList = document.getElementById("profileList");
+        const selectTherapyType = document.getElementById("exampleFormControlSelect1");
+        const selectGender = document.getElementById("exampleFormControlSelect2");
+        const selectCommunication = document.getElementById("exampleFormControlSelect3");
+        const searchButton = document.getElementById("searchButton");
+
+        // Function to filter and display profiles
+        function filterAndDisplayProfiles() {
+            const selectedTherapyType = selectTherapyType.value;
+            const selectedGender = selectGender.value;
+            const selectedCommunication = selectCommunication.value;
+
+
+            const filteredProfiles = therapistProfiles.filter(profile => {
+                return (
+                    (selectedTherapyType === "Select Issue" || profile.therapyType === selectedTherapyType) &&
+                    (selectedGender === "Gender preference" || profile.gender === selectedGender) &&
+                    (selectedCommunication === "Mode of Communication" || profile.communication === selectedCommunication)
+                );
+            });
+
+            // Create and display the filtered profile list
+            const profileListHTML = filteredProfiles.map(profile => {
+                return `
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="${profile.image}" alt="${profile.name} Image" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">${profile.name}</h5>
+                                    <p class="card-text">Therapy Type: ${profile.therapyType}</p>
+                                    <p class="card-text">Gender: ${profile.gender}</p>
+                                    <p class="card-text">Communication: ${profile.communication}</p>
+                                    <p class="card-text">${profile.description}</p>
+                                    <a class="btn btn-primary" href="${profile.name.toLowerCase().replace(' ', '-')}.html">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            profileList.innerHTML = profileListHTML;
+        }
+
+        // Attach event listener to the "Search" button
+        searchButton.addEventListener("click", filterAndDisplayProfiles);
+
+        // Initial display of all profiles
+        filterAndDisplayProfiles();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
